@@ -1,5 +1,5 @@
-Moleskine
-=========
+Pencraft
+========
 A simple Markdown document editor with [Draft](https://www.draftin.com] integration.
 Edit and sync your documents with ease, works offline by default.
 
