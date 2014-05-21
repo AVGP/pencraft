@@ -1,0 +1,14 @@
+{
+  "name": "Pencraft",
+  "description": "Simple Markdown authoring tool",
+  "launch_path": "/pencraft/index.html",
+  "icons": {
+    "128": "/pencraft/images/icon128.png",
+    "96" : "/pencraft/images/icon96.png"
+  },
+  "developer": {
+    "name": "Geekonaut",
+    "url": "http://www.geekonaut.de"
+  },
+  "default_locale": "en"
+}

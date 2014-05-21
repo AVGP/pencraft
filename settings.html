@@ -1,5 +1,13 @@
-<ons-page class="center">
+<ons-page class="center" style="padding: 8px" ng-controller="SettingsCtrl">
 	<ons-navigator title="Settings">
         <h1>Settings</h1>
+        <div ng-show="installable">
+            <h2>Installation</h2>
+            You can install this application to your homescreen by pressing the button below:
+            <div style="padding: 8px">
+                <div ng-hide="installed"><ons-button type="large" ng-click="install()" ng-hide="installed">Install</ons-button></div>
+                <p ng-show="installed">App is already installed.</p>
+            </div>
+        </div>
 	</ons-navigator>
 </ons-page>
