@@ -1,3 +1,13 @@
+angular.module('pencraft.controllers', []);
+
+function DashboardCtrl($scope, DocumentSvc) {
+  $scope.documents = [
+    {name: "Abc"}, {name: "Def"}
+  ];
+  
+  DocumentSvc.getDocuments();
+}
+
 function AddDocCtrl($scope) {
   $scope.create = function() {
     alert($scope.name);

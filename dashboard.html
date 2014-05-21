@@ -1,13 +1,8 @@
-<ons-page class="center">
+<ons-page class="center" ng-controller="DashboardCtrl">
 	<ons-navigator title="Dashboard" right-button-icon="fa fa-plus-circle" on-right-button-click="ons.navigator.pushPage('newDocument.html')">
     	<ons-scroller>
-        	<ons-list>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
-        	    <ons-list-item class="topcoat-list__item__line-height">Document A</ons-list-item>
+        	<ons-list class="left">
+        	    <ons-list-item class="topcoat-list__item__line-height" ng-repeat="doc in documents">{{doc.name}}</ons-list-item>
         	</ons-list>	    
     	</ons-scroller>
     </ons-navigator>
